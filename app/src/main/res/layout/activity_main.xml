@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBluetoothOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="블루투스 ON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBluetoothOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="블루투스 OFF"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="연결하기"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOff"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOff" />
+
+    <TextView
+        android:id="@+id/tvReceiveData"
+        android:layout_width="96dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:text="bell"
+        app:layout_constraintStart_toEndOf="@+id/btnBellOn"
+        app:layout_constraintTop_toTopOf="@+id/btnBellOn" />
+
+    <Button
+        android:id="@+id/btnLedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:text="현관 LED ON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+    <Button
+        android:id="@+id/btnBellOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:text="초인종"
+        app:layout_constraintStart_toEndOf="@+id/btnLedOn"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+    <Button
+        android:id="@+id/btnFanOn"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:text="선풍기 ON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLedOn" />
+
+    <Button
+        android:id="@+id/btnFanOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp"
+        android:text="선풍기 OFF"
+        app:layout_constraintStart_toEndOf="@+id/btnFanOn"
+        app:layout_constraintTop_toBottomOf="@+id/btnBellOn" />
+
+    <Button
+        android:id="@+id/btnBoilerOn"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="보일러 ON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFanOn" />
+
+    <Button
+        android:id="@+id/btnBoilerOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp"
+        android:text="보일러 OFF"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOn"
+        app:layout_constraintTop_toBottomOf="@+id/btnFanOFF" />
+
+    <Button
+        android:id="@+id/btnAlramOff"
+        android:layout_width="102dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="120dp"
+        android:text="알람 OFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timePicker" />
+
+    <Button
+        android:id="@+id/btnKitchenLedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="주방 LIGHT"
+        app:layout_constraintStart_toEndOf="@+id/timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnLivingRoomLedOn" />
+
+    <Button
+        android:id="@+id/btnLivingRoomLedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:text="거실 LIGHT"
+        app:layout_constraintStart_toEndOf="@+id/timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnImagerotation" />
+
+    <Button
+        android:id="@+id/btnBedRoomLedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="침실 LIGHT"
+        app:layout_constraintStart_toEndOf="@+id/timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnKitchenLedOn" />
+
+    <Button
+        android:id="@+id/btnDressRoomLedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:text="드레스룸 LIGHT"
+        app:layout_constraintStart_toEndOf="@+id/btnFanOFF"
+        app:layout_constraintTop_toBottomOf="@+id/tvReceiveData" />
+
+    <Button
+        android:id="@+id/btnImagerotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:text="창문 OPEN/CLOSE"
+        app:layout_constraintStart_toEndOf="@+id/imgRotate2"
+        app:layout_constraintTop_toBottomOf="@+id/btnBoilerOFF" />
+
+    <ImageView
+        android:id="@+id/imgRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/servo_icon"
+        app:layout_constraintBottom_toTopOf="@+id/timePicker"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgRotate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/servo_icon2"
+        app:layout_constraintBottom_toTopOf="@+id/timePicker"
+        app:layout_constraintStart_toEndOf="@+id/imgRotate" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="280dp"
+        android:layout_height="361dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtalramTime"
+        android:layout_width="78dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="alram"
+        app:layout_constraintStart_toEndOf="@+id/timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlramTime" />
+
+    <Button
+        android:id="@+id/btnAlramTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="알람시간 설정"
+        app:layout_constraintStart_toEndOf="@+id/timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlramOff" />
+
+    <TextView
+        android:id="@+id/txtseekbarRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="R"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnDressRoomLedOn" />
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:min="0"
+        android:max="255"
+        android:progress="50"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnDressRoomLedOn" />
+
+    <TextView
+        android:id="@+id/txtseekbarGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:text="G"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnDressRoomLedOn" />
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:min="0"
+        android:max="255"
+        android:progress="50"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnDressRoomLedOn" />
+
+    <TextView
+        android:id="@+id/txtseekbarBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="56dp"
+        android:text="B"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnDressRoomLedOn" />
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="48dp"
+        android:min="0"
+        android:max="255"
+        android:progress="50"
+        app:layout_constraintStart_toEndOf="@+id/btnBoilerOFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnDressRoomLedOn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

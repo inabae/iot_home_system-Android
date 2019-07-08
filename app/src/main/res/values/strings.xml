@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IOT_home_system</string>
+    <style name="MyTimePickerWidgetStyle" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:headerBackground">#ffe082</item>
+        <item name="android:numbersTextColor">#b71c1c</item>
+        <item name="android:numbersInnerTextColor">#f44336</item>
+        <item name="android:numbersSelectorColor">#33691e</item>
+        <item name="android:numbersBackgroundColor">#ef9a9a</item>
+        <item name="android:amPmTextColor">#9c27b0</item>
+    </style>
+</resources>

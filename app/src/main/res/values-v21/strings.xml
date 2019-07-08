@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTimePickerWidgetStyle" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:headerBackground">#9c27b0</item>
+        <item name="android:numbersSelectorColor">#9c27b0</item>
+        <item name="android:numbersBackgroundColor">#ef9a9a</item>
+    </style>
+</resources>
